@@ -117,6 +117,7 @@ p{
 }
 
 /* bannar css */
+.banner-item-small,
 .banner-item{
     background-size: cover !important;
     background-position: center !important;
@@ -124,6 +125,11 @@ p{
     position: relative;
     z-index: 1;
 }
+.banner-item-small{
+    height: 250px;
+}
+
+.banner-item-small::after,
 .banner-item::after{
     content: '';
     position: absolute;
@@ -135,10 +141,17 @@ p{
     z-index: -1;
     
 }
+
+.banner-item-small .carousel-caption-small{
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+}
 #banner .carousel-caption{
     bottom: 50%;
     transform: translateY(50%);
 }
+.banner-item-small h3,
 .banner-item h3{
     font-size: 30px;
     color: #ffffff;
@@ -153,14 +166,17 @@ p{
     padding-top: 10px;
     
 } 
+.banner-item-small p{
+    font-size: 18px;
+    color: #ffffff;
+    font-style: italic;
+}
 .banner-item  p{
     font-family: 'Lucida Handwriting', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     color: #ffffff;
     font-style: italic;
 } 
-
-
 
 /* card css */
 #services_box{
@@ -294,4 +310,22 @@ footer {
 }
 .copy-item p{
     color: #fff;
+}
+
+/* about part */
+#banner_small span,a{
+    color: #fff;
+}
+#banner_small a:hover{
+    color: #fff;
+}
+
+.mission{
+    padding: 30px 0;
+}
+.handle_IT{
+    padding: 30px 0;
+}
+.handle_IT ul {
+    padding-left: 10px;
 }
